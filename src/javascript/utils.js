@@ -46,3 +46,4 @@ function addDefaults(options) {
 }
 
 module.exports = { validateEmail, divide, logEvent, readConfig, getStatus, addDefaults };
+
