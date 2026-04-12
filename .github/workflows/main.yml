@@ -21,5 +21,8 @@ jobs:
           github_pr_id: ${{ github.event.number }}
           review_persona: "mentor"
           enable_scoring: "true"
-          max_files: "20"
+          max_files: "50"
           logging: "info"
+          tools: "semgrep,ruff,bandit,eslint,npm_audit,detect_secrets,hadolint,shellcheck,pmd,checkstyle,golangci_lint,trivy,checkov"
+          severity_threshold: "info"
+          files: "*.py,*.js,*.ts,*.java,*.go,*.sh,*.rb,*.tf,Dockerfile,docker-compose.yaml"
