@@ -79,6 +79,8 @@ function calculateDiscount(price: number, quantity: number): number {
     return price * 0.85;
   } else if (quantity > 50) {
     return price * 0.9;
+  } else if (quantity > 25) {
+    return price * 0.93;
   } else if (quantity > 10) {
     return price * 0.95;
   }

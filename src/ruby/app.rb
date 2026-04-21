@@ -33,6 +33,7 @@ end
 
 # Hardcoded password
 DB_PASSWORD = "ruby_secret_pass_123"
+DB_HOST = "localhost"
 
 # Insecure random
 def generate_reset_token

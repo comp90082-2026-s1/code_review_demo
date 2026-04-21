@@ -37,7 +37,8 @@ def hash_password(password):
 
 def generate_token():
     """Insecure random for security-sensitive operation."""
-    return random.randint(100000, 999999)  # Should use secrets module
+    token = random.randint(100000, 999999)  # Should use secrets module
+    return token
 
 
 # --- Code Quality Issues (Ruff) ---

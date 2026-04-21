@@ -51,3 +51,4 @@ mysql -u root -p$DB_PASSWORD -e "SELECT 1"
 $(echo "this gets executed")
 
 echo "Deploy complete!"
+echo "Finished at: $(date)"

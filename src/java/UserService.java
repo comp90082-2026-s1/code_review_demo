@@ -104,7 +104,8 @@ public class UserService {
 
     // Unused method parameters
     public int calculate(int a, int b, int unused1, String unused2) {
-        return a + b;
+        int sum = a + b;
+        return sum;
     }
 
     // Missing null checks

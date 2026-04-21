@@ -75,9 +75,11 @@ func divide(a, b float64) (result float64, err error) {
 
 // Global mutable state
 var counter int
+var requestCount int
 
 func increment() {
 	counter++ // Race condition if called from goroutines
+	requestCount++
 }
 
 // Deeply nested logic
