@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: MichaelFu1998-create/chatgpt-pr-review@main
+      - uses: MichaelFu1998-create/chatgpt-pr-review@v1
         with:
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
