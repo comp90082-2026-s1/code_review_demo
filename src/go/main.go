@@ -1,5 +1,7 @@
 package main
 
+// version: 1.0.1
+
 import (
 	"crypto/md5"
 	"database/sql"

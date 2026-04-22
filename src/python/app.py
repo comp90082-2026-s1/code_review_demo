@@ -1,4 +1,7 @@
-"""Sample Python web app with intentional issues for static analysis testing."""
+"""Sample Python web app with intentional issues for static analysis testing.
+
+version: 1.0.1
+"""
 
 import pickle
 import os

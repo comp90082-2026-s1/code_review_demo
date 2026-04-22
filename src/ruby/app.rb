@@ -1,4 +1,5 @@
 # Sample Ruby application with intentional issues for Semgrep testing.
+# version: 1.0.1
 
 require 'open-uri'
 require 'yaml'
