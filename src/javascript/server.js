@@ -1,5 +1,6 @@
 /**
  * Sample Express server with intentional issues for ESLint + Semgrep testing.
+ * version: 1.0.1
  */
 
 const express = require("express");

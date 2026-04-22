@@ -1,5 +1,6 @@
 /**
  * TypeScript API module with intentional issues.
+ * version: 1.0.1
  */
 
 // --- Type Safety Issues ---
