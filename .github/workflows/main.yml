@@ -1,28 +1,27 @@
-name: PR Code Review
+name: pr-review
 on:
   pull_request:
     types: [opened, synchronize]
 
 permissions:
-  contents: read
   pull-requests: write
+  contents: read
 
 jobs:
   review:
-    name: Automated Code Review
+    name: PR Review Assistant
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: MichaelFu1998-create/pr-review-assistant@v1.0.0
+      - uses: MichaelFu1998-create/pr-review-assistant@v1.1.0
         with:
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_pr_id: ${{ github.event.number }}
-          review_persona: "mentor"
-          enable_scoring: "true"
-          max_files: "50"
-          logging: "info"
-          tools: "semgrep,ruff,bandit,eslint,npm_audit,detect_secrets,hadolint,shellcheck,pmd,checkstyle,golangci_lint,trivy,checkov"
-          severity_threshold: "info"
+          openai_model: gpt-5.4-mini-2026-03-17
+          openai_max_tokens: 32000
+          max_files: "10"
           files: "*.py,*.js,*.ts,*.java,*.go,*.sh,*.rb,*.tf,Dockerfile,docker-compose.yaml"
+          review_persona: normal
+          review_focus: all
+          tools: auto
